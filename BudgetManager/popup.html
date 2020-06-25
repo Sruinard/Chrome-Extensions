@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="main.css"> 
+    </head>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+         <span class="lines line-1"></span>
+         <span class="lines line-2"></span>
+         <span class="lines line-3"></span>
+       </label>
+        <input class="menu-item blue" type="submit" value="start" id="start_button"/>
+        <!-- <a href="#" class="menu-item blue" id="is_activated"> start <i class="fa fa-anchor"> </i> </a> -->
+        <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+        <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+        <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+        <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+        <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+     </nav>
+    <head>
         <title>Neuralics</title>
-        
     </head>
     <body>
         
-        <h2>Is activated: <span id="is_activated">false</span></h2>
-        <input class="start_timer" type="submit" value="start"/>
+        <h2 style="visibility: hidden">Is activated: <span id="is_activated">false</span></h2>
+        <input style="visibility: hidden" class="start_timer" type="submit" value="start"/>
         <script src="popup.js"></script>
     </body>
 </html>

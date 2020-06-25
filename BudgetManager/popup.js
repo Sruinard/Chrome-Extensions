@@ -1,7 +1,13 @@
 timer_active = localStorage.getItem("timer_activated")
 is_activated = document.getElementById("is_activated")
-timer_button = document.querySelector(".start_timer")
+timer_button = document.getElementById("start_button")
 // stop_button = document.querySelector(".stop_timer")
+
+// new_start_button = is_activated = document.getElementById("start_button")
+
+// new_start_button.addEventListener('click', () => {
+//     alert('I have been clicked')
+// })
 
 if (timer_active) {
     is_activated.textContent = timer_active;
