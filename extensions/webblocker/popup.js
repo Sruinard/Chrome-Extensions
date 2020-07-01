@@ -20,11 +20,11 @@ timer_button.addEventListener('click', (e) => {
         timer_button.value = "stop";
         let now = new Date();
 
-        let n_sec = 3;
+        let n_sec = 10;
         let delta = n_sec * 1000;
         let future_time = now.getTime() + delta;
         localStorage.setItem('end_block_time', future_time)
-
+        window.setTimeout(deactivate, delta);
 
     } else if (timer_active == 'true') {
         // already running
@@ -48,6 +48,3 @@ function deactivate() {
     }
 
 }
-
-
-window.setInterval(deactivate, 1000);

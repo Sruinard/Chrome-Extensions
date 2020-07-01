@@ -26,7 +26,6 @@ const opt = ['blocking'];
 
 function blocker(details) {
     let activated = localStorage.getItem("timer_activated");
-
     if (activated == 'true') {
         return {cancel: true};
     } else {
