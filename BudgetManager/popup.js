@@ -1,6 +1,6 @@
 let timer_active = localStorage.getItem("timer_activated");
 let is_activated = document.getElementById("is_activated");
-let timer_button = document.querySelector(".start_timer");
+let timer_button = document.getElementById("start_button");
 
 if (timer_active) {
     is_activated.textContent = timer_active;
@@ -19,10 +19,12 @@ timer_button.addEventListener('click', (e) => {
         is_activated.textContent = true;
         timer_button.value = "stop";
         let now = new Date();
-        let n_sec = 10;
+
+        let n_sec = 3;
         let delta = n_sec * 1000;
         let future_time = now.getTime() + delta;
         localStorage.setItem('end_block_time', future_time)
+
 
     } else if (timer_active == 'true') {
         // already running
@@ -47,4 +49,5 @@ function deactivate() {
 
 }
 
-window.setTimeout(deactivate, 1000);
+
+window.setInterval(deactivate, 1000);

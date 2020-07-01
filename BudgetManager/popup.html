@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Focus Blocker</title>
-</head>
-<body>
-<div class="container">
 
-    <header class="text-center text-light my-4">
-        <h1 class="mb-1">Focus Blocker</h1>
-        <span class="mb-1">Block distracting websites for X minutes and improve your productivity!
-        </span>
-        <h2></h2>
-        <span class="mb-2">Is currently activated: <span id="is_activated">false</span></span>
-        <h3></h3>
-        <input class="start_timer" type="submit" value="start"/>
-    </header>
-</div>
-
-
-<script src="popup.js"></script>
-</body>
+    <head>
+        <link rel="stylesheet" href="main.css"> 
+    </head>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+         <span class="lines line-1"></span>
+         <span class="lines line-2"></span>
+         <span class="lines line-3"></span>
+       </label>
+        <input class="menu-item blue" type="submit" value="start" id="start_button"/>
+        <!-- <a href="#" class="menu-item blue" id="is_activated"> start <i class="fa fa-anchor"> </i> </a> -->
+        <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+        <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+        <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+        <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+        <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+     </nav>
+    <head>
+        <title>Neuralics</title>
+    </head>
+    <body>
+        
+        <h2 style="visibility: hidden">Is activated: <span id="is_activated">false</span></h2>
+        <input style="visibility: hidden" class="start_timer" type="submit" value="start"/>
+        <script src="popup.js"></script>
+    </body>
 </html>
