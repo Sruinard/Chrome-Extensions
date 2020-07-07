@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+
+  "name": "NeuralicsIndustries",
+  "description": "Improves your focus and productivity.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}
